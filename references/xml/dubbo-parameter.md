@@ -1,11 +1,11 @@
 # dubbo:parameter
 
-Optional parameter configuration. The corresponding class is `java.util.Map`. This tag is used as a sub tag to configure custom parameters for extending <dubbo:protocol>`, `<dubbo:service>`, `<dubbo:provider>`, `<dubbo:reference>` or `<dubbo:consumer>`.
+Optional parameter configuration. The corresponding class is `java.util.Map`. This tag is used as a sub tag to configure custom parameters for extending `<dubbo:protocol>`, `<dubbo:service>`, `<dubbo:provider>`, `<dubbo:reference>` or `<dubbo:consumer>`.
 
-| Attribute | Corresponding URL parameter | Type | Required | Default Value | Function | Description | Compatibility |
-| --- | --- | ---- | --- | --- | --- | --- | --- |
-| key | key | string | <b>True</b> | | Service governance | routing parameter key | Above 2.0.0 |
-| value | value | string | <b>True</b> | | Service governance | routing parameter value | Above 2.0.0 |
+| Attribute | Corresponding URL parameter | Type   | Required    | Default Value | Function           | Description             | Compatibility |
+| --------- | --------------------------- | ------ | ----------- | ------------- | ------------------ | ----------------------- | ------------- |
+| key       | key                         | string | <b>True</b> |               | Service governance | routing parameter key   | Above 2.0.0   |
+| value     | value                       | string | <b>True</b> |               | Service governance | routing parameter value | Above 2.0.0   |
 
 For example：
 
@@ -20,3 +20,4 @@ you can also use it like this:
 ```xml
 <dubbo:protocol name="jms" p:queue="xxx" />
 ```
+
